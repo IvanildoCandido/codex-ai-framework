@@ -115,7 +115,7 @@ python3 scripts/install_framework.py --project /caminho/do/projeto
 
 Ele aborta caso algum arquivo de destino já exista. Essa proteção evita sobrescrever instruções ou documentação de outro projeto.
 
-Após a cópia, o Codex deve substituir os marcadores `{{PROJECT_NAME}}` e `{{DATE}}`, analisar o projeto e preencher a memória com evidências locais.
+Durante a instalação, o próprio script substitui automaticamente `{{PROJECT_NAME}}` e `{{DATE}}`. Depois, o Codex analisa o projeto e preenche a memória com evidências locais.
 
 ## Arquivos deste repositório
 
@@ -125,7 +125,10 @@ codex-ai-framework/
 ├── agents/openai.yaml
 ├── assets/project-template/
 ├── references/project-discovery.md
-└── scripts/install_framework.py
+└── scripts/
+    ├── install_framework.py
+    ├── test_framework.py
+    └── validate_framework.py
 ```
 
 - `SKILL.md`: comportamento da skill.
@@ -133,6 +136,8 @@ codex-ai-framework/
 - `assets/project-template`: arquivos colocados nos projetos.
 - `references/project-discovery.md`: critérios para analisar diferentes tecnologias.
 - `scripts/install_framework.py`: cópia segura do template.
+- `scripts/test_framework.py`: testes autocontidos da distribuição.
+- `scripts/validate_framework.py`: validação da estrutura instalada.
 
 ## Garantias de segurança
 
