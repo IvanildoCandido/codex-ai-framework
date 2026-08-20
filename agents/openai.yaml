@@ -1,0 +1,4 @@
+interface:
+  display_name: "Framework de IA"
+  short_description: "Prepara qualquer projeto para trabalho contínuo com Codex"
+  default_prompt: "Analise este projeto e instale o framework de IA de forma segura, sem sobrescrever arquivos existentes."
